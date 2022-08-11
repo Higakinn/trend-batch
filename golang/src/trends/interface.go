@@ -7,5 +7,5 @@ type TrendResponse struct{
 }
 
 type TrendInterface interface {
-		FetchTrend() (TrendResponse, error)
+		FetchTrends() ([]TrendResponse, error)
 }

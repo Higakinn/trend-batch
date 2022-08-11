@@ -9,7 +9,7 @@ import (
 
 
 func main() {
-			// Argsが何件あるか出力します
+		// Argsが何件あるか出力します
 		fmt.Println("count:", len(os.Args))
 
 		// Argsの中身を一件ずつ出力します
@@ -23,12 +23,12 @@ func main() {
 
     for siteName, trend := range trends {
 			fmt.Println(fmt.Sprintf("%s trend fetching start!\n", siteName))
-			result, err := trend.FetchTrend()
+			results, err := trend.FetchTrends()
 			if err != nil {
 				// エラー時の処理
 				fmt.Println("error!!")
 			}
-			fmt.Println(result)
+			fmt.Println(results)
 			fmt.Println(fmt.Sprintf("%s trend fetching end!\n", siteName))
     }
 }
