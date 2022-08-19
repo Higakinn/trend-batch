@@ -17,8 +17,9 @@ def main():
       print(f'{event["started_at"]}:{event["title"]}')
       print(event["event_url"])
       event_url=event["event_url"]
-  requests.post(URL,data={'content': f"{today}\n{event_url}"})
+  result = requests.post(URL,data={'content': f"{today}\n{event_url}"})
 
+  print(result)
   print("python batch end!!")
 
 if __name__ == '__main__':
