@@ -1,9 +1,8 @@
 name: github action batch template
 
-on:
-  push
-  # schedule:
-  #   - cron: "0 */8 * * *" # 実行したい時間を指定(時間がutcなので注意)
+on: push
+  #schedule:
+  #  - cron: "0 */8 * * *" # 実行したい時間を指定(時間がutcなので注意)
 
 jobs:
   build:

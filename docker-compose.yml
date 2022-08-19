@@ -1,14 +1,14 @@
 version: '3'
 services:
   python-batch:
-    build:
-      context: ./python
-      dockerfile: Dockerfile
-    tty: true
-    volumes:
-      - ./python/src/:/mnt
-    env_file:
-      - .env.python
+     build:
+       context: ./python
+       dockerfile: Dockerfile
+     tty: true
+     volumes:
+       - ./python/src/:/mnt
+     env_file:
+       - .env.python
   golang-batch-dev:
     build:
       context: ./golang
